@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+ <!-- Custom Css -->
+ <link rel="stylesheet" href="style.css" type="text/css" />
+
+ <!-- Ionic icons -->
+ <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
+
+ <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+ <link rel="icon" href="/images/ic_logo.png" />
+ <title>DinersTables</title>
+
+ <script>
+  var w = window.outerWidth;
+  if (w < 481) {
+   window.location = "https://m.dinerstables.com";
+  }
+ </script>
+</head>
+
+<body onresize="checkMobile()" onload="checkMobile()">
+
+ <!-- N A V B A R -->
+ <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="icon ion-md-menu"></span>
+    </button>
+  <img src="images/ic_logo.png" class="img-fluid nav-logo-mobile" alt="Company Logo" />
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+   <div class="container">
+    <img src="images/ic_logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo" width="50px">
+    <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+     <li class="nav-item nav-custom-link">
+      <a class="nav-link" href="index.html">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+     </li>
+     <li class="nav-item nav-custom-link">
+      <a class="nav-link" href="#marketing">Features <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+     </li>
+     <li class="nav-item nav-custom-link">
+      <a class="nav-link" href="#pricing">Pricing <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+     </li>
+     <li class="nav-item nav-custom-link btn btn-demo-small">
+      <a class="nav-link" onclick="onTrialBtnClick()">Try for Free <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </nav>
+ <!-- E N D  N A V B A R -->
+
+ <!-- H E R O -->
+ <section id="hero">
+  <div class="container">
+   <div class="row">
+    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+     <div class="iphone-wrapper">
+      <div>
+       <video width="278" height="460">
+          <source src="app_video.mp4" type="video/mp4">
+        </video>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-7 content-box hero-content">
+     <span>Digital Waiter</span>
+     <h1>Digital Menu Innovation and <b> The Digital Waiters</b></h1>
+     <p>Engage your diners and increase revenue, conversion rate with AI driven menu. </p>
+     <a href="#marketing" class="btn btn-regular">Learn more</a>
+    </div>
+   </div>
+  </div>
+ </section>
+ <!-- E N D  H E R O -->
+
+ <!-- E N D  M A R K E T I N G -->
+ <section id="marketing">
+  <div class="container">
+   <div class="row">
+    <div class="col-md-5">
+     <div class="content-box">
+      <span>POCKET FREINDLY MENU</span>
+      <h2>Product Features</h2>
+      <p>Grow your revenue by using our AI based digital menu and engage your customer's with easy interface.</p>
+      <a class="btn btn-regular" onclick="onTrialBtnClick()">Start Free Trial</a>
+     </div>
+    </div>
+    <div class="col-md-7">
+     <img src="images/product_features.png" class="img-fluid" alt="Demo image">
+    </div>
+   </div>
+  </div>
+ </section>
+ <!-- E N D  M A R K E T I N G -->
+
+ <!-- P R I C I N G -->
+ <section id="pricing">
+  <div class="container">
+   <div class="title-block">
+    <h2>Plans and Pricing</h2>
+    <p>Boost the average bill value through Smart recommendations and reduce the operational cost with exceptional dining experience.</p>
+   </div>
+   <div class="row">
+    <div class="col-md-4">
+     <div class="pricing-box">
+      <h3 class="demo">Demo Version</h3>
+      <h6>Free</h6>
+      <small>limited</small>
+      <p>Demo gives you full access to all features for 45 days</p>
+      <div class="divider-light"></div>
+      <ul>
+       <li><i class="icon ion-md-checkmark-circle-outline demo"></i>Menu Customization</li>
+       <li><i class="icon ion-md-checkmark-circle-outline demo"></i>Reports & Analysis</li>
+       <li><i class="icon ion-md-checkmark-circle-outline demo"></i>Upto 10 Tables</li>
+       <li><i class="icon ion-md-checkmark-circle-outline demo"></i>Unlimited Users</li>
+       <li><i class="icon ion-md-checkmark-circle-outline demo"></i>Limited Support</li>
+      </ul>
+      <div class="text-center">
+       <a onclick="onTrialBtnClick()" class="btn btn-demo">Demo version</a>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4">
+     <div class="pricing-box">
+      <h3>Standard Version</h3>
+      <h6>₹ 1999</h6>
+      <small>per month</small>
+      <p>Grow your business by digitising your food menu </p>
+      <div class="divider-light"></div>
+      <ul>
+       <li><i class="icon ion-md-checkmark-circle-outline demo"></i>Menu Customization</li>
+       <li><i class="icon ion-md-checkmark-circle-outline demo"></i>Reports & Analysis</li>
+       <li><i class="icon ion-md-checkmark-circle-outline demo"></i>Upto 10 Tables</li>
+       <li><i class="icon ion-md-checkmark-circle-outline demo"></i>limited Users</li>
+       <li><i class="icon ion-md-checkmark-circle-outline demo"></i>Extended Support</li>
+      </ul>
+      <div class="text-center">
+       <a onclick="onContactUsBtnClick()" class="btn btn-buy">Buy now</a>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4">
+     <div class="pricing-box">
+      <h3>Flexible Version</h3>
+      <h6>₹ 599</h6>
+      <small>per month + ₹4/cover</small>
+      <p>For large restaurents with unlimited users and tables</p>
+      <div class="divider-light"></div>
+      <ul>
+       <li><i class="icon ion-md-checkmark-circle-outline demo"></i>Menu Customization</li>
+       <li><i class="icon ion-md-checkmark-circle-outline demo"></i>Reports & Analysis</li>
+       <li><i class="icon ion-md-checkmark-circle-outline demo"></i>Unlimited Tables</li>
+       <li><i class="icon ion-md-checkmark-circle-outline demo"></i>Unlimited Users</li>
+       <li><i class="icon ion-md-checkmark-circle-outline demo"></i>Extended Support</li>
+      </ul>
+      <div class="text-center">
+       <a onclick="onContactUsBtnClick()" class="btn btn-buy">Buy now</a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+ <!-- E N D  P R I C I N G -->
+
+ <!-- START MODAL -->
+
+ <div class="generic-modal" id="generic-trial-modal">
+  <div class="generic-modal-content">
+   <img src="images/ic_clear.svg" class="generic-modal-close-button" onclick="onTrialBtnClick()" />
+   <h1>Request for Demo</h1>
+   <div class="generic-modal-divider"></div>
+   <div class="trial-modal-wrapper">
+    <form action="https://script.google.com/macros/s/AKfycbxrLRqMAQoAuA6BOQaZ3YrjqvLyzg0Q-uG5J-1gh0fErDy0tnk/exec" class="gform" method="POST">
+     <div class="form-elements">
+      <div class="form-row">
+       <label>Restaurant Name<span class="required-field-indicator">*</span></label>
+       <input type="text" name="rest-name" required>
+      </div>
+      <div class="form-row">
+       <label>Registration No.<span class="required-field-indicator">*</span></label>
+       <input type="text" name="rest-reg-no" required>
+      </div>
+      <div class="split-form-row">
+       <div class="form-row">
+        <label>Full Name<span class="required-field-indicator">*</span></label>
+        <input type="text" name="name" required>
+       </div>
+       <div class="form-row">
+        <label>Designation</label>
+        <input type="text" name="designation">
+       </div>
+      </div>
+      <div class="split-form-row">
+       <div class="form-row">
+        <label>Phone<span class="required-field-indicator">*</span></label>
+        <input type="number" name="phone" required>
+       </div>
+       <div class="form-row">
+        <label>Email<span class="required-field-indicator">*</span></label>
+        <input type="email" name="email" required>
+       </div>
+      </div>
+      <div class="split-form-row">
+       <div class="form-row">
+        <label>State</label>
+        <input type="text" name="state">
+       </div>
+       <div class="form-row">
+        <label>Postal Code</label>
+        <input type="text" name="postal-code">
+       </div>
+      </div>
+      <div class="form-row">
+       <label>Message</label>
+       <textarea name="message"></textarea>
+      </div>
+      <div class="modal-footer-divider"></div>
+      <button class="sign-up-btn">SIGN UP</button>
+     </div>
+     <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+
+ <div class="generic-modal" id="generic-contact-us-modal">
+  <div class="generic-modal-content">
+   <img src="images/ic_clear.svg" class="generic-modal-close-button" onclick="onContactUsBtnClick()" />
+   <h1>Contact Us</h1>
+   <div class="generic-modal-divider"></div>
+   <div class="trial-modal-wrapper">
+    <form action="https://script.google.com/macros/s/AKfycbx86NX3kLUETgZNah23RNzD2nbdFqPM2_2nLObvYoi8nNaWXk4/exec" method="POST" class="gform">
+     <div class="form-elements">
+      <div class="split-form-row">
+       <div class="form-row">
+        <label>Full Name<span class="required-field-indicator">*</span></label>
+        <input type="text" name="name" required>
+       </div>
+       <div class="form-row">
+        <label>Designation<span class="required-field-indicator">*</span></label>
+        <input type="text" name="designation" required>
+       </div>
+      </div>
+      <div class="split-form-row">
+       <div class="form-row">
+        <label>Phone<span class="required-field-indicator">*</span></label>
+        <input type="number" name="phone" required>
+       </div>
+       <div class="form-row">
+        <label>Email<span class="required-field-indicator">*</span></label>
+        <input type="email" name="email" required>
+       </div>
+      </div>
+      <div class="form-row">
+       <label>Message</label>
+       <textarea name="message"></textarea>
+      </div>
+      <div class="modal-footer-divider"></div>
+      <button class="sign-up-btn">SEND</button>
+     </div>
+     <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+
+ <div class="generic-modal" id="generic-alliance-modal">
+  <div class="generic-modal-content">
+   <img src="images/ic_clear.svg" class="generic-modal-close-button" onclick="onAllianceBtnClick()" />
+   <h1>Contact Us</h1>
+   <div class="generic-modal-divider"></div>
+   <div class="trial-modal-wrapper">
+    <form action="https://script.google.com/macros/s/AKfycbx86NX3kLUETgZNah23RNzD2nbdFqPM2_2nLObvYoi8nNaWXk4/exec" method="POST" class="gform">
+     <div class="form-elements">
+      <div class="split-form-row">
+       <div class="form-row">
+        <label>Full Name<span class="required-field-indicator">*</span></label>
+        <input type="text" name="name" required>
+       </div>
+       <div class="form-row">
+        <label>Phone<span class="required-field-indicator">*</span></label>
+        <input type="number" name="phone" required>
+       </div>
+      </div>
+      <div class="split-form-row">
+       <div class="form-row">
+        <label>Email<span class="required-field-indicator">*</span></label>
+        <input type="email" name="email" required>
+       </div>
+       <div class="form-row">
+        <label>Company<span class="required-field-indicator">*</span></label>
+        <input type="text" name="company" required>
+       </div>
+      </div>
+      <div class="form-row">
+       <label>Message</label>
+       <textarea name="message"></textarea>
+      </div>
+      <div class="modal-footer-divider"></div>
+      <button class="sign-up-btn">SEND</button>
+     </div>
+     <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+
+ <!-- END MODAL -->
+
+ <!-- C A L L  T O  A C T I O N -->
+ <section id="call-to-action">
+  <div class="container text-center">
+   <h2>Increase your conversion rates now</h2>
+   <div class="title-block">
+    <p>Learn how you can increase cover rates and reduce operational cost using dinerstable digital menu.</p>
+    <a onclick="onContactUsBtnClick()" class="btn btn-regular">Contact Sales</a>
+   </div>
+  </div>
+ </section>
+ <!-- E N D  C A L L  T O  A C T I O N -->
+
+ <!--  F O O T E R  -->
+ <footer>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-3 no-position">
+     <h5>Product</h5>
+     <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#marketing">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="mailto:support@dinerstables.com">Support</a></li>
+     </ul>
+    </div>
+    <div class="col-md-3 no-position">
+     <h5>General</h5>
+     <ul>
+      <li><a onclick="onTrialBtnClick()">Free Trial</a></li>
+      <li><a href="#">Admin App</a></li>
+      <li><a onclick="onContactUsBtnClick()">Contact Us</a></li>
+     </ul>
+    </div>
+    <div class="col-md-3 no-position">
+     <h5>Sales</h5>
+     <ul>
+      <li><a onclick="onTrialBtnClick()">Buy Product</a></li>
+      <li><a onclick="onAllianceBtnClick()">Affliate Program</a></li>
+      <li><a onclick="onAllianceBtnClick()">Partnerships</a></li>
+     </ul>
+    </div>
+    <div class="col-md-3 no-position">
+     <h5>Company</h5>
+     <p>DinersTables is a simple-to-use digital waiter for all diners and a waiter less order management system for all rstarenteurs</p>
+     <p><a href="mailto:contact@dinerstables.com" class="external-links">contact@dinerstables.com</a></p>
+    </div>
+   </div>
+   <div class="divider"></div>
+   <div class="row">
+    <div class="col-md-7 col-xs-12">
+     <small>DinersTables Pvt Ltd. 2018 &copy; All rights reserved.</small>
+    </div>
+   </div>
+  </div>
+ </footer>
+ <!--  E N D  F O O T E R  -->
+
+
+ <!-- External JavaScripts -->
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+ <!--Start of Tawk.to Script-->
+ <script type="text/javascript">
+  var Tawk_API = Tawk_API || {},
+   Tawk_LoadStart = new Date();
+  (function() {
+   var s1 = document.createElement("script"),
+    s0 = document.getElementsByTagName("script")[0];
+   s1.async = true;
+   s1.src = 'https://embed.tawk.to/5c0262c2fd65052a5c934ffc/default';
+   s1.charset = 'UTF-8';
+   s1.setAttribute('crossorigin', '*');
+   s0.parentNode.insertBefore(s1, s0);
+  })();
+ </script>
+ <!--End of Tawk.to Script-->
+ <script type="text/javascript">
+  function onTrialBtnClick() {
+   var trialModal = document.querySelector("#generic-trial-modal");
+   trialModal.classList.toggle("show-modal");
+  }
+
+  function onContactUsBtnClick() {
+   var contactUsModal = document.querySelector("#generic-contact-us-modal");
+   contactUsModal.classList.toggle("show-modal");
+  }
+
+  function onAllianceBtnClick() {
+   var allianceModal = document.querySelector("#generic-alliance-modal");
+   allianceModal.classList.toggle("show-modal");
+  }
+
+  function checkMobile() {
+   var w = window.outerWidth;
+   if (w < 481) {
+    window.location = "https://m.dinerstables.com";
+   }
+  }
+ </script>
+ <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+</body>
+
+</html>
