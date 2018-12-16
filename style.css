@@ -240,9 +240,11 @@ div.iphone-wrapper div {
  background-size: contain;
 }
 
-div.iphone-wrapper video {
+div.iphone-wrapper img {
+ border-radius: 27px;
+ margin-bottom: 7px;
  position: relative;
- top: -13px;
+ left: -3px;
 }
 
 
