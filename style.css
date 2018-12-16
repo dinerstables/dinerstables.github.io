@@ -235,16 +235,17 @@ div.iphone-wrapper {
 }
 
 div.iphone-wrapper div {
- padding: 138px;
+ padding: 85px;
  background: url(images/iphone.png) center center no-repeat;
  background-size: contain;
 }
 
 div.iphone-wrapper img {
+ height: 437px;
  border-radius: 27px;
  margin-bottom: 7px;
  position: relative;
- left: -3px;
+ left: -2px;
 }
 
 
