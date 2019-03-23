@@ -353,6 +353,10 @@ div.iphone-wrapper img {
 /* ==============================================
    7. Pricing
 ===============================================*/
+#pricing {
+ background-color: #f6f8f9;
+}
+	
 
 .pricing-box {
  background-color: #ffffff;
